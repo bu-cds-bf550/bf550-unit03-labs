@@ -9,7 +9,7 @@ instructors and TAs in the room. Nothing here is submitted and nothing here is g
 |---|---|---|
 | Lab 7 · Machines that make numbers | `unit-03-1.ipynb` |  |
 | Lab 8 · The dial that drifts | `unit-03-2.ipynb` |  |
-| Lab 9 · Reading week: two levels deep | `unit-03-3.ipynb` |  |
+| Lab 9 · Reading drills: two levels deep | `unit-03-3.ipynb` |  |
 
 ## Run them
 
