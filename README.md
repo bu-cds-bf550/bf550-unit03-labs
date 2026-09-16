@@ -1,7 +1,5 @@
 # BF550 · Unit 3 labs
 
-> ⚠️ **Under construction.** These labs are drafted but not yet reviewed; they may change before their meeting.
-
 The notebooks for unit 3's class meetings. You work through them during lab time, with
 instructors and TAs in the room. Nothing here is submitted and nothing here is graded.
 

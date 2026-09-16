@@ -26,6 +26,17 @@ def check(name, expect, args=None, hint=""):
         return
     value = namespace[name]
     label = name
+    if args is None and callable(value):
+        _report("❌", f"{name} is a function, but this task asks for a variable named {name} "
+                      "that stores a value.")
+        print(f"   Compute the value in the cell above and store it as {name} = ... ; "
+              "the check reads the variable and does not call it.")
+        return
+    if args is not None and not callable(value):
+        _report("❌", f"{name} holds the value {value!r}, but this task asks for a function "
+                      f"named {name} that the check can call.")
+        print(f"   Write it in the cell above with def {name}(...): and a return line.")
+        return
     if args is not None:
         # a repr carrying a memory address (e.g. a generator) reads as noise —
         # show the type's name instead
