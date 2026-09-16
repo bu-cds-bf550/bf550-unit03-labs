@@ -5,8 +5,8 @@ instructors and TAs in the room. Nothing here is submitted and nothing here is g
 
 | Lab | Notebook | Meeting |
 |---|---|---|
-| Lab 7 · Machines that make numbers | `unit-03-1.ipynb` |  |
-| Lab 8 · The dial that drifts | `unit-03-2.ipynb` |  |
+| Lab 7 · Draw methods and the numbers they produce | `unit-03-1.ipynb` |  |
+| Lab 8 · When a parameter is itself drawn | `unit-03-2.ipynb` |  |
 | Lab 9 · Reading drills: two levels deep | `unit-03-3.ipynb` |  |
 
 ## Run them
