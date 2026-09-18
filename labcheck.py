@@ -74,12 +74,14 @@ _since_summary = 0
 
 def ready(*names):
     """Report which of `names` are not yet defined in the notebook. True when all are."""
+    global _since_summary
     namespace = inspect.currentframe().f_back.f_globals
     missing = [n for n in names if n not in namespace]
     for n in missing:
         _report("⬜", f"{n} — not defined yet. Write it in the cell above, run that cell, "
                       "then re-run this one.")
         _results.append((f"{n} defined", False))
+        _since_summary += 1       # so a checks block's closing count includes it
     return not missing
 
 
